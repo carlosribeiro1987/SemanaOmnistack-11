@@ -1,6 +1,6 @@
-const express = require('express');
-const cors = require('cors');
-const routes = require('./routes');
+const express = require("express");
+const cors = require("cors");
+const routes = require("./routes");
 const app = express();
 
 app.use(cors()); //Permite que qualquer aplicação acesse o backend
@@ -21,19 +21,16 @@ app.use(routes);
 
 /**
  *  Tipos de parâmetros:
- * 
+ *
  *  Query: Parâmetros nomeados enviados na rota após "?" (Filtros, paginação).
  *  Route Params: Parâmetros utilizados para identificar recursos.
  *  Request Body: Corpo da requisição utilizado para criar ou alterar recursos.
  */
 
-
-
 app.listen(3333);
 
 /**
- * 
+ *
  * npm install -D nodemon (Para monitorar o código sem precisar reiniciar o node)
- * 
- * adicionar 
+ *
  */
